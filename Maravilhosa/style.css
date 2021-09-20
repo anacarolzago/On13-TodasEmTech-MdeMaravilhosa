@@ -15,7 +15,7 @@ a {
 /* NAVBAR */
   
 .navbar{
-    background-color: #C083B9;
+    background-color: #2da380;
     width: 100%;
     height: 85px;
 }
@@ -31,12 +31,13 @@ a {
 /* HEADER */
   
 .header {
-    background-image: url(./img/backgroud_header_01.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 80vh;
     width: 100%;
-    height: 500px;
+    min-height: 80vh;
+    height: auto;
+    background-color: #B03060;
+    /* background-image: url(./img/backgroud_header_01.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     color: #ffffff;
 }
   
@@ -44,52 +45,53 @@ a {
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 30px;
     flex-direction: column;
+    padding: 30px;
 }
-  
-/* .header_container_img{
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-}  */
-  
-.header_maravilhosa_img{
-    width: 90%;
-    height: 220px;
-    margin-left: 20px;
-    margin-top: 22px;
-}
-  
+
 .header_titulo {
-    width: 90%;
-    margin: 5px 10px 5px 10px;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
+
+.header_titulo h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+}
+
+.container_header_img {
+    border-radius: 3px;
+}
+  
+.header_img{
+    width: 100%;
+    height: 220px;
+    border-radius: 3px;
+}
+  
  
 /* --- BOTAO --- */
    
 .header_button {
+    margin: 30px 0;
+    color: #fff;
+    background: #184061;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 40px;
-    background: #7F479B;
-    border-radius: 5px;
-    color: #ffffff;
+    width: auto;
+    height: 50px;
     text-decoration: none;
     list-style: none;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    margin-top: 40px;
 }
   
 .header_button:hover {
@@ -102,429 +104,447 @@ a {
 /* SECAO Maravilhosa */
 
 .maravilhosa {
-    background-color: #fad8e5;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    background-color: #2da380;
     width: 100%;
-    height: 100%;
-    padding-bottom: 25px;
-    
-    border: 2px solid #ee69dc;
+    height: auto;
+    padding: 20px 20px;
 }
   
 .container_maravilhosa {
-    text-align: center;
-    padding: 0 5%;
+    background-color: #9e365c;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    border-radius: 3px;
+    gap: 20px;
+    padding-bottom: 20px;
 }
   
-.maravilhosa_titulo{
-    color: #a82371;
-    font-size: 1.4rem;
+.container_maravilhosa h2 { 
+    font-size: 26px;
+    margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    padding-top: 20px;
     margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
-.maravilhosa_titulo span {
-    color: #542b8a;
+.container_maravilhosa h2 span {
+    color: #1b91c0;
+    font-size: 30px;
 }
 
 .maravilhosa_titulo span:hover {
-    background-color: #831e6d;
+    background-color: #b13897;
     color: #f9fbfd;
     transition: 0.8s;
-    
 }
 
-.container_maravilhosa_foto {
-    width: 93%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 5px 5px 8px #807b7b;
-}
-
-.container_img_texto {
-    font-size: 0.7rem;
-    font-style: italic;
-    margin: -5px;
-    padding: 0 15px;
-    text-align: center;
-}
-  
-.maravilhosa_boxBorder{
-    background-image: linear-gradient(rgb(247, 168, 247), rgb(173, 156, 248));
-    border: 1px solid #674582;
-    margin-top: 35px;
-    padding-bottom: 21px;
-    text-align: justify;
-}
-  
-.boxBorder_texto{
-    margin: 12px;
-    color: #462755;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.boxBorder_imagem {
+.container_maravilhosa_foto, .container_maravilhosa_foto2, .suaHistoria_imagem, .suaHistoria2_imagem, .suaHistoria3_imagem, .suaHistoria4_imagem {
     width: 90%;
-    margin-left: 14px;
-    box-shadow: 2px 1px 5px #807b7b;
+    margin: 10px 13px;
+    box-shadow: 2px 2px 4px #807b7b;
+    border-radius: 5px;
 }
 
-.boxBorder_img_texto, .suaHistoria_img_texto {
-    font-size: 0.7rem;
+.container_img_texto, .container_img_texto2, .suaHistoria_img_texto {
+    color: #fff;
+    font-size: 11px;
     font-style: italic;
-    margin-top: 5px;
-    padding: 0 55px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    padding: 0 60px;
     text-align: center;
 }
 
-.container_img_foto {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 5px 5px 8px #807b7b;
+.container_img_texto2 {
+    margin-top: 0;
 }
-  
-.container_suaHistoria {
+
+.container_maravilhosa2 {
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #2d043a;
-}
-  
-.suaHistoria_texto{
-    width: 100%;
-    margin-top: 20px;
 }
 
-.suaHistoria_titulo{
-    color: #421c55;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
-
-}
-
-.suaHistoria_paragrafo{
-    margin-top: 40px;
-    
-}
-  
-.suaHistoria_imagem {
-    width: 90%;
-    box-shadow: 3px 4px 8px #807b7b;
-    margin-top: 15px;
-}
-
-/* .suaHistoria_img_texto {
-    font-size: 0.7rem;
-    font-style: italic;
-    margin-top: 5px;
-    padding: 0 55px;
-    text-align: center;
-} */
-
-
-/* AUTORA */
-.autora {
-    background-color: #b6dbf1d2;
-    width: 100%;
-    /* height: 523px; */
-    margin-top: 26px;
-    padding: 17px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-
-    border: 2px solid #497694;
-}
-  
-.autora_titulo {
-    text-align: center;
-    color: #ea4c89;
-    font-size: 1.4rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+.container_maravilhosa2_texto {
     margin-bottom: 20px;
 }
 
-/* Aqui como deixar a foto centralizada??? */
 
-.autora_imagem {
-    width: 50%;
+
+/* container_suaHistoria */
+
+.container_suaHistoria {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container_suaHistoria h2 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #791543;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.suaHistoria_texto, .suaHistoria_texto1, .suaHistoria_texto2, .suaHistoria3_texto, .suaHistoria4_texto {
+    padding: 20px 20px;
+    text-align: justify;
+}
+
+.suaHistoria_img_texto, .suaHistoria_img_texto2, .suaHistoria_img_texto3, .suaHistoria_img_texto4 {
+    color: #fff;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    padding: 0 60px;
+    text-align: center;
+}
+
+
+/* AUTORA */
+.autora_sobre {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #184061;
+}
+
+.autora_sobre h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.autora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.container_autora_img {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.autora_foto {
     border-radius: 50%;
-    box-shadow: 0px 3px 8px #807b7b;  
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 7px #807b7b;  
 }
 
 .container_autora {
-    margin-top: 30px;
+    color: #fff;
+    text-align: justify;
+    flex: 2;
+}
+
+.container_autora h3 {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.container_autora p {
+    text-align: center;
+    margin: 10px 10px;
+    letter-spacing: 1px;
+    padding: 0 10px;
 }
 
 .link_reprograma {
-    color: #b92e84;
+    color: #dd7dc5;
 }
 
 .link_reprograma:hover {
-    background-color: #b92e84;
+    background-color: #87e0a9;
     color: #ffffff;
     transition: background-color .5s;
 }
 
-.container_autora {
-    text-align: center;
-}
-
-.container_autora_texto {
-    margin-top: 25px;
-}
-
 
 /* FOOTER */
-.footer {
-    background: #ea4c89;
-    color: #f3f3f3;
-    margin-top: 28px;
-
-    border: 2px solid #62bbd6;
-}
-  
-.footer_menu{
+.footer_menu {
+    background-color: #B03060;
+    color: #fff;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    gap: 25px;
+    height: auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin: -23px 60px;
-    font-size: 0.9rem;
-    padding: 50px;
+    margin-top: 20px;
+    padding: 30px 0;
 }
-  
-.footer_links {
+
+.footer_menu_a, .footer_links {
     display: block;
     text-align: center;
     list-style: none;
-    margin-top: 25px;
 }
 
-.footer_menu_a {
-    text-align: center;
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    list-style: none;
-}
-  
 .footer_cc {
     background: #5B5E5E;
-    padding: 20px;
-    font-size: 0.5rem;
-
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer_cc_p {
-    width: 100%;
-    padding-left: 46px;
+    padding: auto;
+    margin: auto;
+    text-align: center;
 }
 
 
 /* /////////////////////////////////////MEDIA QUERY///////////////////////////////// */
 
 /* Extra small (xs): Smartphone (portrait - retrato) */
-@media (min-width: 400px) {
-    .navbar{
-        background-color: #8dcc8b;
-    }
+/* @media (min-width: 400px)  */
 
-    .suaHistoria_titulo {
-        font-size: 1.2rem;
-        padding-left: 11px;
-        padding-right: 11px;
-    }
-
-    /* Aqui precisa afastar em cima em baixo Home de Conheça a Reprograma */
-
-    /* .footer_menu_aa {
-        margin-bottom: 50px;
-    }     */
-
-    .footer_cc_p {
-        padding-left: 76px;
-    }
-
-    .footer_links {
-       flex-direction: column;
-       margin-left: 45px;
-       margin-right: 47px;
-    }
-}
 
 /* Extra small (sm): Smartphone (landscape - paisagem) */
-@media (min-width: 576px) {
-    .navbar{
-        background-color: #8ba7cc;
+@media (min-width: 570px) {
+    .header_img {
+        height: 300px;
     }
-
-    .maravilhosa {
-        margin-top: -50px;
+    .container_maravilhosa h2 {
+        padding: 10px 20px;
     }
-
-    .maravilhosa_titulo {
-        padding-top: 32px;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .header_maravilhosa_img {
-        height: 260px;
-    }
-
-    .container_maravilhosa_foto, .boxBorder_imagem {
+    .container_maravilhosa_foto, .container_maravilhosa_foto2, .suaHistoria_imagem, .suaHistoria2_imagem, .suaHistoria3_imagem {
         width: 80%;
-
-        /* Por que aqui a foto não fica centralizada? */
-        align-items: center;
-        justify-content: center;
     }
-
-    .suaHistoria_titulo {
-        font-size: 1.3rem;
-        padding-left: 11px;
-        padding-right: 11px;
-    }
-
-    .suaHistoria_paragrafo {
-        text-align: justify;
-        margin: 50px 14px 8px 14px;
-    }
-
-    .suaHistoria_imagem {
-        width: 75%;
-    }
-
-    .autora_imagem {
-        width: 40%;
-    }
-
-    .footer_menu {
-        font-size: 1.1rem;
-    }
-
-    .footer_cc_p {
-        font-size: 0.8rem;
-
+    .footer_cc {
+        font-size: 10px;
     }
 }
 
-/* Medium (md): Tablet */
-@media (min-width: 768px) {
-    .navbar{
-        background-color: #ccc28b;
+@media (min-width: 700px){
+    .header_img {
+        height: 390px;
     }
+    .footer_cc {
+        font-size: 12px;
+    }
+}
 
+@media (min-width: 760px){
+    .header {
+        min-height: 40vh;
+    }
     .container_header {
         flex-direction: row;
         align-items: center;
+        gap: 25px;
     }
-
-    .maravilhosa {
-        margin-top: -40px;
+    .header_titulo {
+        width: 60%;
     }
-
-    .header_maravilhosa_img {
-        width: 90%;
-        margin-right: 200px;
-        height: 329px;
+    .header_img {
+        height: 320px;
     }
-
-    .container_maravilhosa_foto, .boxBorder_imagem, .suaHistoria_imagem{
+    .container_maravilhosa h2 {
+        padding: 10px 95px;
+    }
+    .container_maravilhosa_foto, .container_maravilhosa_foto2, .suaHistoria_imagem, .suaHistoria2_imagem, .suaHistoria3_imagem, .suaHistoria4_imagem {
         width: 70%;
-
-        /* Por que aqui a foto não fica centralizada? */
+    }
+    .autora_sobre {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
-
-    .container_img_texto, .boxBorder_img_texto, .suaHistoria_img_texto {
-        font-size: 0.9rem;
+    .autora_sobre h2 {
+        padding-top: 20px;
     }
-
-    .suaHistoria_titulo {
-        padding-left: 90px;
-        padding-right: 90px;
+    .autora {
+        flex-direction: row;
+        width: auto;
+        padding-bottom: 20px;
+        margin: 0 40px;
     }
-
-    .autora_imagem {
-        width: 25%;
+    .footer_menu {
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        padding: 50px 20px;
     }
-
-    .footer_cc_p {
-        text-align: center;
+    .footer_cc {
+        font-size: 15px;
     }
 }
 
 /* Large (lg): Notebook */
 @media (min-width: 992px) {
-    .navbar{
-        background-color: #cc8b9e;
+    .header_img {
+        height: 367px;
     }
-
     .maravilhosa {
-        margin-top: -3px;
+        padding: 50px 50px;
     }
-
-    .header_maravilhosa_img {
-        width: 90%;
-        margin-right: 621px;
-        margin-left: -15px;
-        height: 370px;
+    .container_maravilhosa {
+        padding: 30px 30px;
     }
-
-    .container_maravilhosa_foto, .boxBorder_imagem, .suaHistoria_imagem {
-        width: 50%;
+    .container_maravilhosa h2 {
+        padding: 7px 154px;
     }
-
-    .maravilhosa_titulo {
-        font-size: 30px;
+    .container_maravilhosa_foto, .container_maravilhosa_foto2, .suaHistoria_imagem, .suaHistoria2_imagem, .suaHistoria3_imagem, .suaHistoria4_imagem {
+        width: 60%;
     }
-
-    .suaHistoria_titulo {
-        padding-left: 150px;
-        padding-right: 150px;
-        font-size: 1.4rem;
+    .container_maravilhosa h2 span {
+        font-size: 35px;
     }
-
-    .autora_imagem {
-        width: 20%;
+    .container_suaHistoria h2 {
+        font-size: 23px;
+        padding: 10px 100px;
     }
-
-    .footer_menu {
-        font-size: 1.4rem;
-        margin: 16px 30px 10px 30px;
-        padding: 15px 0px 3px 60px;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .footer_cc_p {
-        font-size: 16px;
-    }
-
 }
 
 /* Extra Large (xl): Computador */
 @media (min-width: 1200px) {
-    .navbar{
-        background-color: #C083B9;
+    .header_titulo {
+        width: 35%;
+        margin: 0 15px;
+        padding-left: 20px;
     }
-
-    .container_maravilhosa_foto, .boxBorder_imagem, .suaHistoria_imagem {
+    .header_img {
+        display: flex;
+        flex-direction: row;
+        height: 382px;
+        margin: 35px 0;
+    }
+    .container_maravilhosa h2 span {
+        font-size: 45px;
+        padding-left: 20px;
+    }
+    .container_maravilhosa_texto_1 {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        margin: 10px 10px;
+        font-size: 20px;
+    }
+    .container_maravilhosa_foto {
+        width: 50%;
+    }
+    .container_img_texto, .container_img_texto2, .suaHistoria_img_texto, .suaHistoria_img_texto2, .suaHistoria_img_texto3, .suaHistoria_img_texto4 {
+        font-size: 15px;
+    }
+    .container_maravilhosa2 {
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .container_maravilhosa2_texto {
+        flex-direction: column;
+        margin-right: 10px;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    .container_maravilhosa_foto2, .suaHistoria_imagem, .suaHistoria2_imagem {
+        width: 30%;
+    }
+    .container_img_texto2 {
+        text-align: end;
+        padding-right: 35px;
+    }
+    .suaHistoria1, .suaHistoria3, .suaHistoria4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .suaHistoria_texto, .suaHistoria_texto1, .suaHistoria_texto2, .suaHistoria3_texto, .suaHistoria4_texto {
+        font-size: 18px;
+        margin-left: 30px;
+        padding: 0 50px;
+    }
+    .suaHistoria_texto1 {
+        margin-top: -140px;
+    }
+    .suaHistoria_texto2 {
+        margin-right: 439px;
+        margin-top: -200px;
+        padding-right: 60px;
+    }
+    .suaHistoria3_texto {
+        margin-top: 50px;
+        padding-right: 95px;
+    }
+    .suaHistoria4_texto {
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+    .suaHistoria_imagem {
+        margin-right: 65px;
+    }
+    .suaHistoria_img_texto   {
+        margin-left: 780px;
+        padding: 2px 100px;
+    }
+    .suaHistoria_img_texto2 {
+        margin-right: 427px;
+    }
+    .suaHistoria_img_texto3 {
+        margin-top: -243px;
+        margin-left: 475px;
+    }
+    .suaHistoria_img_texto4 {
+        margin-top: -30px;
+        padding-left: 800px;
+        margin-right: 80px;
+    }
+    .suaHistoria2_imagem {
+        margin-top: 120px;
+        margin-right: 443px;
+    }
+    .suaHistoria3_imagem {
+        width: 125%;
+        margin-top: -642px;
+        margin-right: 250px;
+    }
+    .suaHistoria4_imagem {
         width: 40%;
+        margin-top: -200px;
+        margin-right: 65px;
     }
-
-    .autora_imagem {
-        width: 15%;
+    .autora {
+        margin: 0 170px
+    }
+    .autora_foto {
+        width: 220px;
+    }
+    .container_autora {
+        font-size: 18px;
+    }
+    .container_autora h3, .container_autora p {
+        text-align: right;
+    }
+    .container_autora p {
+        margin-right: -25px;
+        margin-top: 37px;
     }
 }
